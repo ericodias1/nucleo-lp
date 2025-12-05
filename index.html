@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Núcleo App - O App da Sua Igreja em Minutos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2445cf',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-white text-gray-900">
+    
+    <!-- Header Fixo -->
+    <header class="fixed top-0 left-0 right-0 bg-white z-50 border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="images/nucleo-logo.png" alt="Núcleo App" class="h-10 w-auto">
+                </div>
+                <div class="flex flex-col items-end gap-1">
+                    <a href="#criar-app" class="bg-primary text-white px-5 py-2.5 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-200 hover:scale-105 text-center text-sm leading-tight">
+                        Criar app da minha igreja
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Coluna Esquerda - Texto -->
+            <div class="animate-fade-in-up">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                    O app da sua igreja.<br>
+                    Em minutos.<br>
+                    <span class="text-primary">Sem complicação.</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
+                    Crie o app personalizado da <strong>sua igreja</strong> com logo, cores e todas as funcionalidades que você precisa: eventos, doações, transmissões ao vivo, notificações segmentadas e muito mais.
+                </p>
+                <div class="flex flex-col justify-center gap-4">
+                    <a href="#criar-app" class="bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-opacity-90 transition-all duration-200 hover:scale-105 text-center">
+                        Criar app da minha igreja
+                    </a>
+                    <a href="#exemplos" class="text-primary px-8 py-4 rounded-full font-semibold text-lg border-2 border-primary hover:bg-primary hover:text-white transition-all duration-200 text-center">
+                        Ver exemplos de apps de igrejas
+                    </a>
+                </div>
+                <div class="mt-6 flex justify-center">
+                    <img src="images/seu-app.png" alt="Apps de igrejas no smartphone" class="max-w-full h-auto rounded-2xl shadow-lg">
+                </div>
+            </div>
+
+            <!-- Coluna Direita - Mockup -->
+            <div class="relative animate-fade-in-up">
+                <!-- Grade de Apps (Imagem do smartphone) -->
+                <div class="mb-6 flex justify-center hidden">
+                    <img src="images/seu-app.png" alt="Apps de igrejas no smartphone" class="max-w-full h-auto rounded-2xl shadow-lg">
+                </div>
+
+                <!-- Mockup do Celular -->
+                <div class="flex justify-center">
+                    <div class="bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl w-64 sm:w-80">
+                        <div class="bg-white rounded-[2rem] overflow-hidden h-[700px]">
+                            <img src="images/mockup-05.png" alt="App Igreja" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Problema x Solução -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
+                Por que sua igreja precisa do Núcleo App?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 - Comunicação Organizada -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-200">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-comments text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Adeus, WhatsApp bagunçado</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Centralize avisos, comunicados e informações importantes em um único lugar. Seus membros sempre saberão onde encontrar o que precisam, sem perder mensagens no meio de grupos.
+                    </p>
+                </div>
+
+                <!-- Card 2 - Maior Engajamento -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-200">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Mais participação da comunidade</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Notificações direcionadas, eventos destacados e conteúdo fácil de acessar aumentam significativamente a participação dos membros nos cultos, eventos e atividades.
+                    </p>
+                </div>
+
+                <!-- Card 3 - Doações Facilitadas -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-200">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Doações mais simples</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Receba ofertas e dízimos diretamente pelo app, de forma segura e prática. Seus membros podem contribuir a qualquer momento, de onde estiverem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Funcionalidades -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
+                Tudo que sua igreja precisa em um único app
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Feed e Conteúdos -->
+                <div class="bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors duration-200">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-newspaper text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900">Feed e Conteúdos</h3>
+                    <p class="text-gray-600 text-sm">Compartilhe fotos dos cultos, devocionais, estudos bíblicos e mensagens inspiradoras com sua comunidade.</p>
+                </div>
+
+                <!-- Notificações Segmentadas -->
+                <div class="bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors duration-200">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-bell text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900">Notificações Segmentadas</h3>
+                    <p class="text-gray-600 text-sm">Envie avisos para grupos específicos: ministérios, jovens, mulheres, líderes ou toda a igreja. Comunicação direta e eficiente.</p>
+                </div>
+
+                <!-- Agenda de Cultos -->
+                <div class="bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors duration-200">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-calendar text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900">Agenda de Cultos</h3>
+                    <p class="text-gray-600 text-sm">Todos os membros terão acesso fácil aos horários de cultos, reuniões e atividades semanais da igreja.</p>
+                </div>
+
+                <!-- Eventos e Inscrições -->
+                <div class="bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors duration-200">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-calendar-check text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900">Eventos e Inscrições</h3>
+                    <p class="text-gray-600 text-sm">Crie eventos, confirmeções, encontros e retiros. Gerencie inscrições e tenha controle total sobre a participação.</p>
+                </div>
+
+                <!-- Doações e Ofertas -->
+                <div class="bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors duration-200">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-heart text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900">Doações e Ofertas</h3>
+                    <p class="text-gray-600 text-sm">Receba dízimos e ofertas de forma segura e prática. Seus membros podem contribuir a qualquer momento, pelo app.</p>
+                </div>
+
+                <!-- Transmissão ao Vivo -->
+                <div class="bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors duration-200">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-video text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-900">Transmissão ao Vivo</h3>
+                    <p class="text-gray-600 text-sm">Transmita seus cultos e eventos ao vivo diretamente pelo app. Sua comunidade acompanha de qualquer lugar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Como Funciona -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 text-gray-900">
+                Como criar o app da sua igreja
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Passo 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                        1
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-900">Informe o nome da sua igreja</h3>
+                    <p class="text-gray-600 text-sm">Comece escolhendo o nome que aparecerá no app e será reconhecido pelos seus membros.</p>
+                </div>
+
+                <!-- Passo 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                        2
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-900">Personalize com logo e cores</h3>
+                    <p class="text-gray-600 text-sm">Envie o logo da sua igreja e escolha as cores. Nossa equipe ajuda você a deixar tudo perfeito.</p>
+                </div>
+
+                <!-- Passo 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                        3
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-900">Escolha as funcionalidades</h3>
+                    <p class="text-gray-600 text-sm">Ative eventos, doações, transmissões, notificações e outros módulos que sua igreja precisa.</p>
+                </div>
+
+                <!-- Passo 4 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold">
+                        4
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-900">Pronto! O app da sua igreja está no ar</h3>
+                    <p class="text-gray-600 text-sm">Seu app já está disponível na App Store e Google Play. Seus membros podem baixar e usar agora mesmo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Social Proof -->
+    <section id="exemplos" class="py-20 bg-white">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
+                Centenas de igrejas já transformaram sua comunicação e engajamento com o Núcleo App. Veja alguns exemplos de apps de igrejas que estão fazendo a diferença em suas comunidades.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-7xl mx-auto">
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center">
+                    <img src="images/mockup-01.png" alt="App de Igreja - Comunidade Vida" class="w-full h-auto">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center">
+                    <img src="images/mockup-05.png" alt="App de Igreja" class="w-full h-auto">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center">
+                    <img src="images/mockup-06.png" alt="App de Igreja" class="w-full h-auto">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center">
+                    <img src="images/mockup-02.png" alt="App de Igreja" class="w-full h-auto">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center">
+                    <img src="images/mockup-03.png" alt="App de Igreja" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Final CTA -->
+    <section id="criar-app" class="py-20 bg-primary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+                Pronto para transformar a comunicação da sua igreja?
+            </h2>
+            <p class="text-xl text-white text-opacity-90 mb-10">
+                Crie o app da sua igreja em minutos e leve sua comunidade para o próximo nível. Mais organização, mais engajamento, mais resultados.
+            </p>
+            <div class="flex flex-col items-center gap-4">
+                <a href="#criar-app" class="bg-white text-primary px-10 py-5 rounded-full font-bold text-lg hover:bg-opacity-90 transition-all duration-200 hover:scale-105 shadow-lg">
+                    Criar app da minha igreja agora
+                </a>
+                <a href="#exemplos" class="text-white text-opacity-80 hover:text-white transition-colors duration-200 text-sm underline">
+                    Ver exemplos de apps de igrejas antes
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm">© 2025 Núcleo App. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
